@@ -9,6 +9,8 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import { formLabelClasses } from "@mui/material";
 
+require("dotenv").config();
+
 function App() {
   const myStorage = window.localStorage;
   const [currentUser, setCurrentUser] = useState(myStorage.getItem("user"));
