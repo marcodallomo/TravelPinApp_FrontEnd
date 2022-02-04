@@ -7,7 +7,6 @@ import "./app.css";
 import axios from "axios";
 import Register from "./components/Register";
 import Login from "./components/Login";
-import { formLabelClasses } from "@mui/material";
 
 function App() {
   const myStorage = window.localStorage;
