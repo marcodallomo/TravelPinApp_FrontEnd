@@ -44,5 +44,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://travelpinapp-backend.herokuapp.com"
+  "proxy": "https://travelpinapp-backend.herokuapp.com/api"
 }
