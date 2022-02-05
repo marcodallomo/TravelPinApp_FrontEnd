@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
+
 import RoomIcon from "@mui/icons-material/Room";
 import StarIcon from "@mui/icons-material/Star";
 import { format } from "timeago.js";
@@ -7,9 +8,6 @@ import "./app.css";
 import axios from "axios";
 import Register from "./components/Register";
 import Login from "./components/Login";
-
-///new
-import "mapbox-gl/dist/mapbox-gl.css";
 
 // added the following 6 lines.
 import mapboxgl from "mapbox-gl";
@@ -19,8 +17,6 @@ import mapboxgl from "mapbox-gl";
 // @ts-ignore
 // eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
 mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
-
-///new
 
 function App() {
   const myStorage = window.localStorage;
